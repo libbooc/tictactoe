@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #742992;
+    --winning-blocks: #EA8784;
+    --red: #B0130E;
+}
+
+body {
+    color: var(--purple);
+    font-family: 'Finger Paint', cursive;
+}
+
+h1{
+    color: #ffffff;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #301f3f;
+}
+
+.gameboard {
+    position: relative;
+}
+
+h2 {
+    padding: 7px;
+    border-radius: 5px;
+    background: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.gameboard section {
+    display: flex;
+    position: relative;
+}
+
+.gameboard .gamearea {
+    margin-top: 20px;
+    position: relative;
+}
+
+.gameboard section span {
+    display: block;
+    margin: 3px;
+    height: 120px;
+    width: 120px;
+    border-radius: 10px;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 110px;
+}
+
+.box {
+    background-color: #ffffff;
+    color: var(--purple);
+}
+
+.box:hover {
+    cursor: pointer;
+    transform: translateY(-1px);
+    background-color: #e8d5f5;
+}
+
+.no-hover {
+    pointer-events: none; 
+  }
+
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 40px;
+    background-color: var(--purple);
+    color:  #ffffff;
+    border-color: var(--purple);
+    font-family: 'Finger Paint';
+    font-size: 18px;
+    transition: 200ms transform;
+    font-weight: 600;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
